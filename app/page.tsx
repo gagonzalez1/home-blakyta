@@ -18,7 +18,7 @@ const projects = [
   {
     name: "Bot WhatsApp",
     description: "Panel y servicios del asistente conversacional conectado con WhatsApp.",
-    href: "https://bot.blakyta3d.duckdns.org",
+    href: "https://bot.blakyta3d.duckdns.org/docs",
     tag: "Automatización",
     accent: "green",
     icon: "WA",
