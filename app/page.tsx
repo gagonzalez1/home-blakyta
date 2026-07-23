@@ -39,6 +39,14 @@ const projects = [
     accent: "coral",
     icon: "HB",
   },
+  {
+    name: "Prosperidad",
+    description: "Finanzas personales, consumos de tarjetas, presupuestos y objetivos de ahorro.",
+    href: "https://prosperidad.blakyta3d.duckdns.org",
+    tag: "Finanzas",
+    accent: "green",
+    icon: "PR",
+  },
 ];
 
 export default function Home() {
