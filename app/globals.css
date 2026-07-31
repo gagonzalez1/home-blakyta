@@ -54,7 +54,7 @@ main {
   background: rgba(86, 134, 235, 0.1);
 }
 
-.hero, .project-grid, footer {
+.hero, .project-grid, .other-projects, footer {
   position: relative;
   z-index: 1;
   max-width: 1180px;
@@ -193,6 +193,7 @@ h1 {
 .green { --accent: #50a873; }
 .blue { --accent: #5686eb; }
 .coral { --accent: #e47b63; }
+.teal { --accent: #2b9f98; }
 
 .card-top { display: flex; align-items: center; justify-content: space-between; }
 
@@ -291,6 +292,74 @@ h2 { margin: 9px 0 9px; font-size: 25px; letter-spacing: -.035em; }
 }
 .open-label span { color: var(--accent); margin-left: 4px; }
 
+.service-activity {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.service-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.service-platform {
+  color: var(--muted);
+  font-size: 11px;
+  text-align: right;
+}
+
+.other-projects {
+  margin-top: 24px;
+  padding: 24px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .46);
+}
+
+.section-kicker {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.other-projects h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.other-projects ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 9px;
+  list-style: none;
+}
+
+.other-projects li {
+  padding: 9px 13px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: #52605a;
+  background: rgba(255, 255, 255, .72);
+  font-size: 12px;
+  font-weight: 700;
+}
+
 footer {
   margin-top: 28px;
   display: flex;
@@ -326,6 +395,8 @@ footer {
   }
   .project-grid { grid-template-columns: 1fr; }
   .project-card { min-height: 390px; }
+  .other-projects { align-items: flex-start; flex-direction: column; }
+  .other-projects ul { justify-content: flex-start; }
   footer { flex-wrap: wrap; }
 }
 

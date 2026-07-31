@@ -55,25 +55,37 @@ const projects = [
     icon: "PR",
     repository: "prosperidad-sheets",
   },
+  {
+    name: "WooCommerce",
+    description: "Tienda online de Blakyta 3D con catálogo, pagos y opciones de envío.",
+    href: "https://tienda.blakyta3d.duckdns.org",
+    tag: "Tienda online",
+    accent: "teal",
+    icon: "WC",
+  },
 ] as const;
 
-type Repository = (typeof projects)[number]["repository"];
 type Activity = {
   lastCommitAt: string;
   commitsTotal: number;
   commitsLast30Days: number;
 };
 
-const activity = activitySnapshot.repositories as Record<Repository, Activity>;
+const otherProjects = ["MetaIA Landing", "Tiendanube", "Vaquitas"] as const;
+
+const activity = activitySnapshot.repositories as Record<string, Activity>;
 const projectsWithActivity = projects.map((project) => ({
   ...project,
-  activity: activity[project.repository],
+  activity: "repository" in project ? activity[project.repository] : undefined,
 }));
-const recentCommits = projectsWithActivity.reduce(
+const trackedProjects = projectsWithActivity.filter(
+  (project): project is typeof project & { activity: Activity } => Boolean(project.activity),
+);
+const recentCommits = trackedProjects.reduce(
   (total, project) => total + project.activity.commitsLast30Days,
   0,
 );
-const mostActive = projectsWithActivity.reduce((current, project) =>
+const mostActive = trackedProjects.reduce((current, project) =>
   project.activity.commitsLast30Days > current.activity.commitsLast30Days
     ? project
     : current,
@@ -125,7 +137,7 @@ export default function Home() {
           </div>
           <div>
             <span className="pulse-value">{projects.length}</span>
-            <span className="pulse-label">proyectos con actividad registrada</span>
+            <span className="pulse-label">aplicaciones activas</span>
           </div>
         </section>
       </header>
@@ -133,7 +145,7 @@ export default function Home() {
       <section className="project-grid" aria-label="Proyectos disponibles">
         {projectsWithActivity.map((project, index) => {
           const activityWidth =
-            peakActivity === 0
+            !project.activity || peakActivity === 0
               ? 0
               : Math.max(
                   5,
@@ -160,39 +172,63 @@ export default function Home() {
                 <h2>{project.name}</h2>
                 <p>{project.description}</p>
               </div>
-              <div className="activity-block">
-                <div className="activity-date">
-                  <span className="activity-dot" aria-hidden="true" />
-                  <span>Último commit</span>
-                  <time dateTime={project.activity.lastCommitAt}>
-                    {dateFormatter.format(new Date(project.activity.lastCommitAt))}
-                  </time>
+              {project.activity ? (
+                <div className="activity-block">
+                  <div className="activity-date">
+                    <span className="activity-dot" aria-hidden="true" />
+                    <span>Último commit</span>
+                    <time dateTime={project.activity.lastCommitAt}>
+                      {dateFormatter.format(new Date(project.activity.lastCommitAt))}
+                    </time>
+                  </div>
+                  <div
+                    className="activity-meter"
+                    role="img"
+                    aria-label={`${project.activity.commitsLast30Days} commits en los últimos 30 días`}
+                  >
+                    <span style={{ width: `${activityWidth}%` }} />
+                  </div>
+                  <div className="commit-counts">
+                    <span>
+                      <strong>{project.activity.commitsLast30Days}</strong> en 30 días
+                    </span>
+                    <span>
+                      <strong>{project.activity.commitsTotal}</strong> totales
+                    </span>
+                  </div>
                 </div>
-                <div
-                  className="activity-meter"
-                  role="img"
-                  aria-label={`${project.activity.commitsLast30Days} commits en los últimos 30 días`}
-                >
-                  <span style={{ width: `${activityWidth}%` }} />
+              ) : (
+                <div className="activity-block service-activity">
+                  <div className="service-status">
+                    <span className="activity-dot" aria-hidden="true" />
+                    <span>Servicio en línea</span>
+                  </div>
+                  <span className="service-platform">WordPress + WooCommerce</span>
                 </div>
-                <div className="commit-counts">
-                  <span>
-                    <strong>{project.activity.commitsLast30Days}</strong> en 30 días
-                  </span>
-                  <span>
-                    <strong>{project.activity.commitsTotal}</strong> totales
-                  </span>
-                </div>
-              </div>
+              )}
               <span className="open-label">Abrir proyecto <span>→</span></span>
             </a>
           );
         })}
       </section>
 
+      <section className="other-projects" aria-labelledby="other-projects-title">
+        <div>
+          <p className="section-kicker">En desarrollo e integraciones</p>
+          <h2 id="other-projects-title">Otros proyectos</h2>
+        </div>
+        <ul>
+          {otherProjects.map((project) => (
+            <li key={project}>{project}</li>
+          ))}
+        </ul>
+      </section>
+
       <footer>
         <span className="status-dot" />
-        <span>{projects.length} proyectos disponibles</span>
+        <span>{projects.length} aplicaciones disponibles</span>
+        <span className="separator">·</span>
+        <span>{otherProjects.length} otros proyectos</span>
         <span className="separator">·</span>
         <span>
           Actividad actualizada{" "}

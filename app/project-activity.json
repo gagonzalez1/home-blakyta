@@ -1,11 +1,11 @@
 {
-  "updatedAt": "2026-07-29T01:15:05.868Z",
-  "windowStartedAt": "2026-06-29T01:15:05.868Z",
+  "updatedAt": "2026-07-31T15:17:29.867Z",
+  "windowStartedAt": "2026-07-01T15:17:29.867Z",
   "repositories": {
     "publicador-ml": {
-      "lastCommitAt": "2026-07-29T01:11:18Z",
-      "commitsTotal": 28,
-      "commitsLast30Days": 28
+      "lastCommitAt": "2026-07-29T15:28:40Z",
+      "commitsTotal": 36,
+      "commitsLast30Days": 36
     },
     "metaia-demo": {
       "lastCommitAt": "2026-07-15T03:34:28Z",
@@ -28,9 +28,9 @@
       "commitsLast30Days": 5
     },
     "prosperidad-sheets": {
-      "lastCommitAt": "2026-07-29T00:35:01Z",
-      "commitsTotal": 43,
-      "commitsLast30Days": 43
+      "lastCommitAt": "2026-07-31T15:08:09Z",
+      "commitsTotal": 54,
+      "commitsLast30Days": 54
     }
   }
 }

@@ -25,7 +25,7 @@ async function render() {
   );
 }
 
-test("renderiza el portal con el resumen y la actividad por proyecto", async () => {
+test("renderiza las aplicaciones activas y los otros proyectos", async () => {
   const response = await render();
   assert.equal(response.status, 200);
   assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
@@ -45,9 +45,17 @@ test("renderiza el portal con el resumen y la actividad por proyecto", async () 
     "CV Builder ATS",
     "Recetario Heybez",
     "Prosperidad",
+    "WooCommerce",
+    "MetaIA Landing",
+    "Tiendanube",
+    "Vaquitas",
   ]) {
     assert.match(html, new RegExp(project));
   }
+
+  assert.match(html, /Servicio en línea/i);
+  assert.match(html, /7(?:<!-- -->)? aplicaciones disponibles/i);
+  assert.match(html, /3(?:<!-- -->)? otros proyectos/i);
 });
 
 test("la instantánea contiene métricas válidas para los seis repositorios", async () => {
