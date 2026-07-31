@@ -71,7 +71,20 @@ type Activity = {
   commitsLast30Days: number;
 };
 
-const otherProjects = ["MetaIA Landing", "Tiendanube", "Vaquitas"] as const;
+const otherProjects = [
+  {
+    name: "MetaIA Landing",
+    description: "Sitio institucional de MetaIA y acceso a su demo interactiva.",
+  },
+  {
+    name: "Tiendanube",
+    description: "Integración de catálogo y ventas de Tiendanube con Estación 3D.",
+  },
+  {
+    name: "Vaquitas",
+    description: "Detección, seguimiento y conteo de ganado en videos de dron.",
+  },
+] as const;
 
 const activity = activitySnapshot.repositories as Record<string, Activity>;
 const projectsWithActivity = projects.map((project) => ({
@@ -219,7 +232,10 @@ export default function Home() {
         </div>
         <ul>
           {otherProjects.map((project) => (
-            <li key={project}>{project}</li>
+            <li key={project.name}>
+              <strong>{project.name}</strong>
+              <span>{project.description}</span>
+            </li>
           ))}
         </ul>
       </section>

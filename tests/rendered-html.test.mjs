@@ -56,6 +56,9 @@ test("renderiza las aplicaciones activas y los otros proyectos", async () => {
   assert.match(html, /Servicio en línea/i);
   assert.match(html, /7(?:<!-- -->)? aplicaciones disponibles/i);
   assert.match(html, /3(?:<!-- -->)? otros proyectos/i);
+  assert.match(html, /Sitio institucional de MetaIA/i);
+  assert.match(html, /Integración de catálogo y ventas de Tiendanube/i);
+  assert.match(html, /conteo de ganado en videos de dron/i);
 });
 
 test("la instantánea contiene métricas válidas para los seis repositorios", async () => {
