@@ -4,6 +4,7 @@ import { writeFile } from "node:fs/promises";
 const repositories = [
   "publicador-ml",
   "metaia-demo",
+  "portfolio-repuestos-demo",
   "template-agente-whatsapp",
   "cv-builder-ats",
   "heybez-recetario",

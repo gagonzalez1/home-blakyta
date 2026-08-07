@@ -1,16 +1,21 @@
 {
-  "updatedAt": "2026-07-31T15:17:29.867Z",
-  "windowStartedAt": "2026-07-01T15:17:29.867Z",
+  "updatedAt": "2026-08-07T15:42:07.201Z",
+  "windowStartedAt": "2026-07-08T15:42:07.201Z",
   "repositories": {
     "publicador-ml": {
-      "lastCommitAt": "2026-07-29T15:28:40Z",
-      "commitsTotal": 36,
-      "commitsLast30Days": 36
+      "lastCommitAt": "2026-08-02T20:19:41Z",
+      "commitsTotal": 45,
+      "commitsLast30Days": 45
     },
     "metaia-demo": {
-      "lastCommitAt": "2026-07-15T03:34:28Z",
-      "commitsTotal": 5,
-      "commitsLast30Days": 5
+      "lastCommitAt": "2026-08-06T19:12:04Z",
+      "commitsTotal": 29,
+      "commitsLast30Days": 29
+    },
+    "portfolio-repuestos-demo": {
+      "lastCommitAt": "2026-08-07T15:41:35Z",
+      "commitsTotal": 4,
+      "commitsLast30Days": 4
     },
     "template-agente-whatsapp": {
       "lastCommitAt": "2026-07-15T03:17:40Z",
@@ -18,9 +23,9 @@
       "commitsLast30Days": 26
     },
     "cv-builder-ats": {
-      "lastCommitAt": "2026-07-22T21:13:17Z",
-      "commitsTotal": 13,
-      "commitsLast30Days": 13
+      "lastCommitAt": "2026-08-05T01:27:33Z",
+      "commitsTotal": 14,
+      "commitsLast30Days": 14
     },
     "heybez-recetario": {
       "lastCommitAt": "2026-07-26T15:45:22Z",
@@ -28,9 +33,9 @@
       "commitsLast30Days": 5
     },
     "prosperidad-sheets": {
-      "lastCommitAt": "2026-07-31T15:08:09Z",
-      "commitsTotal": 54,
-      "commitsLast30Days": 54
+      "lastCommitAt": "2026-08-03T20:24:05Z",
+      "commitsTotal": 61,
+      "commitsLast30Days": 61
     }
   }
 }

@@ -20,6 +20,15 @@ const projects = [
     repository: "metaia-demo",
   },
   {
+    name: "MotorIA Repuestos",
+    description: "Demo conversacional para buscar repuestos por vehículo, motor y medida en un catálogo ficticio.",
+    href: "https://repuestos-demo.blakyta3d.duckdns.org",
+    tag: "Inteligencia artificial",
+    accent: "violet",
+    icon: "MI",
+    repository: "portfolio-repuestos-demo",
+  },
+  {
     name: "Bot WhatsApp",
     description: "Panel y servicios del asistente conversacional conectado con WhatsApp.",
     href: "https://bot.blakyta3d.duckdns.org/docs",
