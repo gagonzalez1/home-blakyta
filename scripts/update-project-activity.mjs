@@ -9,6 +9,7 @@ const repositories = [
   "cv-builder-ats",
   "heybez-recetario",
   "prosperidad-sheets",
+  "tonkatsu-personal",
 ];
 
 const owner = "gagonzalez1";

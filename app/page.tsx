@@ -65,6 +65,15 @@ const projects = [
     repository: "prosperidad-sheets",
   },
   {
+    name: "Tonkatsu Personal",
+    description: "Biblioteca personal de juegos, anime, series, películas y cursos con acceso MCP.",
+    href: "https://media.blakyta3d.duckdns.org",
+    tag: "Biblioteca personal",
+    accent: "coral",
+    icon: "TK",
+    repository: "tonkatsu-personal",
+  },
+  {
     name: "WooCommerce",
     description: "Tienda online de Blakyta 3D con catálogo, pagos y opciones de envío.",
     href: "https://tienda.blakyta3d.duckdns.org",

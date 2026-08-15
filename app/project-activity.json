@@ -1,31 +1,31 @@
 {
-  "updatedAt": "2026-08-07T15:42:07.201Z",
-  "windowStartedAt": "2026-07-08T15:42:07.201Z",
+  "updatedAt": "2026-08-15T07:05:26Z",
+  "windowStartedAt": "2026-07-16T07:05:25Z",
   "repositories": {
     "publicador-ml": {
-      "lastCommitAt": "2026-08-02T20:19:41Z",
-      "commitsTotal": 45,
-      "commitsLast30Days": 45
+      "lastCommitAt": "2026-08-15T03:19:55Z",
+      "commitsTotal": 98,
+      "commitsLast30Days": 76
     },
     "metaia-demo": {
-      "lastCommitAt": "2026-08-06T19:12:04Z",
-      "commitsTotal": 29,
-      "commitsLast30Days": 29
+      "lastCommitAt": "2026-08-12T14:53:31Z",
+      "commitsTotal": 33,
+      "commitsLast30Days": 28
     },
     "portfolio-repuestos-demo": {
-      "lastCommitAt": "2026-08-07T15:41:35Z",
-      "commitsTotal": 4,
-      "commitsLast30Days": 4
+      "lastCommitAt": "2026-08-07T20:23:17Z",
+      "commitsTotal": 8,
+      "commitsLast30Days": 8
     },
     "template-agente-whatsapp": {
       "lastCommitAt": "2026-07-15T03:17:40Z",
       "commitsTotal": 28,
-      "commitsLast30Days": 26
+      "commitsLast30Days": 0
     },
     "cv-builder-ats": {
-      "lastCommitAt": "2026-08-05T01:27:33Z",
-      "commitsTotal": 14,
-      "commitsLast30Days": 14
+      "lastCommitAt": "2026-08-10T14:41:19Z",
+      "commitsTotal": 17,
+      "commitsLast30Days": 17
     },
     "heybez-recetario": {
       "lastCommitAt": "2026-07-26T15:45:22Z",
@@ -33,9 +33,14 @@
       "commitsLast30Days": 5
     },
     "prosperidad-sheets": {
-      "lastCommitAt": "2026-08-03T20:24:05Z",
-      "commitsTotal": 61,
-      "commitsLast30Days": 61
+      "lastCommitAt": "2026-08-13T22:46:48Z",
+      "commitsTotal": 84,
+      "commitsLast30Days": 67
+    },
+    "tonkatsu-personal": {
+      "lastCommitAt": "2026-08-15T06:47:59Z",
+      "commitsTotal": 1227,
+      "commitsLast30Days": 177
     }
   }
 }
