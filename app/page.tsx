@@ -29,6 +29,15 @@ const projects = [
     repository: "portfolio-repuestos-demo",
   },
   {
+    name: "Puntazo Docs",
+    description: "Mapa interactivo C4 con flujos del frontend, secuencias, datos y referencias al código de Puntazo.",
+    href: "https://puntazo-docs.blakyta3d.duckdns.org",
+    tag: "Documentación",
+    accent: "teal",
+    icon: "PT",
+    repository: "puntazo-docs",
+  },
+  {
     name: "Bot WhatsApp",
     description: "Panel y servicios del asistente conversacional conectado con WhatsApp.",
     href: "https://bot.blakyta3d.duckdns.org/docs",

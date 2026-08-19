@@ -5,6 +5,7 @@ const repositories = [
   "publicador-ml",
   "metaia-demo",
   "portfolio-repuestos-demo",
+  "puntazo-docs",
   "template-agente-whatsapp",
   "cv-builder-ats",
   "heybez-recetario",
