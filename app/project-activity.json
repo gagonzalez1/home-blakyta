@@ -1,26 +1,31 @@
 {
-  "updatedAt": "2026-08-19T03:27:20.668Z",
-  "windowStartedAt": "2026-07-20T03:27:20.668Z",
+  "updatedAt": "2026-09-30T20:53:04.144Z",
+  "windowStartedAt": "2026-08-31T20:53:04.144Z",
   "repositories": {
     "publicador-ml": {
-      "lastCommitAt": "2026-08-17T18:49:31Z",
-      "commitsTotal": 102,
-      "commitsLast30Days": 76
+      "lastCommitAt": "2026-09-21T19:53:43Z",
+      "commitsTotal": 200,
+      "commitsLast30Days": 20
     },
     "metaia-demo": {
-      "lastCommitAt": "2026-08-12T14:53:31Z",
-      "commitsTotal": 33,
-      "commitsLast30Days": 28
+      "lastCommitAt": "2026-08-30T18:04:21Z",
+      "commitsTotal": 34,
+      "commitsLast30Days": 0
     },
     "portfolio-repuestos-demo": {
       "lastCommitAt": "2026-08-07T20:23:17Z",
       "commitsTotal": 8,
-      "commitsLast30Days": 8
+      "commitsLast30Days": 0
     },
     "puntazo-docs": {
-      "lastCommitAt": "2026-08-19T03:21:53Z",
-      "commitsTotal": 2,
+      "lastCommitAt": "2026-09-24T20:55:55Z",
+      "commitsTotal": 6,
       "commitsLast30Days": 2
+    },
+    "gonzalotev/app-fidelidad": {
+      "lastCommitAt": "2026-09-30T20:21:59Z",
+      "commitsTotal": 202,
+      "commitsLast30Days": 174
     },
     "template-agente-whatsapp": {
       "lastCommitAt": "2026-07-15T03:17:40Z",
@@ -30,22 +35,22 @@
     "cv-builder-ats": {
       "lastCommitAt": "2026-08-10T14:41:19Z",
       "commitsTotal": 17,
-      "commitsLast30Days": 12
+      "commitsLast30Days": 0
     },
     "heybez-recetario": {
-      "lastCommitAt": "2026-07-26T15:45:22Z",
-      "commitsTotal": 5,
-      "commitsLast30Days": 4
+      "lastCommitAt": "2026-08-30T17:58:18Z",
+      "commitsTotal": 7,
+      "commitsLast30Days": 0
     },
     "prosperidad-sheets": {
-      "lastCommitAt": "2026-08-13T22:46:48Z",
-      "commitsTotal": 84,
-      "commitsLast30Days": 67
+      "lastCommitAt": "2026-09-28T17:10:43Z",
+      "commitsTotal": 130,
+      "commitsLast30Days": 26
     },
     "tonkatsu-personal": {
       "lastCommitAt": "2026-08-15T22:28:44Z",
       "commitsTotal": 1232,
-      "commitsLast30Days": 161
+      "commitsLast30Days": 0
     }
   }
 }

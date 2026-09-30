@@ -38,6 +38,15 @@ const projects = [
     repository: "puntazo-docs",
   },
   {
+    name: "Puntazo Testing",
+    description: "Versión de pruebas de la app de fidelidad Puntazo.",
+    href: "https://testing.puntazo.pro/login",
+    tag: "Pruebas",
+    accent: "teal",
+    icon: "PZ",
+    repository: "gonzalotev/app-fidelidad",
+  },
+  {
     name: "Bot WhatsApp",
     description: "Panel y servicios del asistente conversacional conectado con WhatsApp.",
     href: "https://bot.blakyta3d.duckdns.org/docs",

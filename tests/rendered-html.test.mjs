@@ -43,6 +43,7 @@ test("renderiza las aplicaciones activas y los otros proyectos", async () => {
     "MetaIA Demo",
     "MotorIA Repuestos",
     "Puntazo Docs",
+    "Puntazo Testing",
     "Bot WhatsApp",
     "CV Builder ATS",
     "Recetario Heybez",
@@ -57,19 +58,19 @@ test("renderiza las aplicaciones activas y los otros proyectos", async () => {
   }
 
   assert.match(html, /Servicio en línea/i);
-  assert.match(html, /10(?:<!-- -->)? aplicaciones disponibles/i);
+  assert.match(html, /11(?:<!-- -->)? aplicaciones disponibles/i);
   assert.match(html, /3(?:<!-- -->)? otros proyectos/i);
   assert.match(html, /Sitio institucional de MetaIA/i);
   assert.match(html, /Integración de catálogo y ventas de Tiendanube/i);
   assert.match(html, /conteo de ganado en videos de dron/i);
 });
 
-test("la instantánea contiene métricas válidas para los nueve repositorios", async () => {
+test("la instantánea contiene métricas válidas para los diez repositorios", async () => {
   const snapshot = JSON.parse(
     await readFile(new URL("app/project-activity.json", projectRoot), "utf8"),
   );
 
-  assert.equal(Object.keys(snapshot.repositories).length, 9);
+  assert.equal(Object.keys(snapshot.repositories).length, 10);
   assert.ok(Date.parse(snapshot.updatedAt));
   assert.ok(Date.parse(snapshot.windowStartedAt));
 

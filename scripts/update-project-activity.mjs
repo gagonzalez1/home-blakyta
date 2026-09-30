@@ -6,6 +6,7 @@ const repositories = [
   "metaia-demo",
   "portfolio-repuestos-demo",
   "puntazo-docs",
+  "gonzalotev/app-fidelidad",
   "template-agente-whatsapp",
   "cv-builder-ats",
   "heybez-recetario",
@@ -13,15 +14,17 @@ const repositories = [
   "tonkatsu-personal",
 ];
 
-const owner = "gagonzalez1";
 const updatedAt = new Date();
 const windowStartedAt = new Date(updatedAt);
 windowStartedAt.setUTCDate(windowStartedAt.getUTCDate() - 30);
 
 const repositoryFields = repositories
-  .map(
-    (repository, index) => `
-      r${index}: repository(owner: "${owner}", name: "${repository}") {
+  .map((repository, index) => {
+    const [owner, name] = repository.includes("/")
+      ? repository.split("/")
+      : ["gagonzalez1", repository];
+    return `
+      r${index}: repository(owner: "${owner}", name: "${name}") {
         defaultBranchRef {
           target {
             ... on Commit {
@@ -34,8 +37,8 @@ const repositoryFields = repositories
           }
         }
       }
-    `,
-  )
+    `;
+  })
   .join("\n");
 
 const query = `query { ${repositoryFields} }`;
